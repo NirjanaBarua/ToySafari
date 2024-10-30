@@ -1,0 +1,186 @@
+[
+  {
+    "id": "01",
+    "categoryName": "Plush Animal Toys",
+    "toys": [
+      {
+        "picture": "/images/toys/plush_teddy_bear.png",
+        "name": "Teddy Bear",
+        "price": 24.99,
+        "rating": 4.8,
+        "availableQuantity": 50,
+        "description": "A soft and cuddly teddy bear perfect for snuggling. Made from high-quality, hypoallergenic materials, this toy is ideal for children and adults alike."
+      },
+      {
+        "picture": "/images/toys/plush_unicorn.png",
+        "name": "Unicorn",
+        "price": 29.99,
+        "rating": 4.7,
+        "availableQuantity": 40,
+        "description": "A magical plush unicorn with a sparkling horn and colorful mane, sure to bring imaginative play to life. Ideal for gifting and cuddling."
+      },
+      {
+        "picture": "/images/toys/plush_cat.png",
+        "name": "Soft Cat",
+        "price": 19.99,
+        "rating": 4.6,
+        "availableQuantity": 60,
+        "description": "This adorable plush cat is the perfect companion for cat lovers. Its soft fur and realistic details make it a favorite for both kids and collectors."
+      },
+      {
+        "picture": "/images/toys/plush_dog.png",
+        "name": "Plush Dog",
+        "price": 22.99,
+        "rating": 4.9,
+        "availableQuantity": 55,
+        "description": "A cute and loyal plush dog, always ready for a hug. Its soft material and charming design make it a great friend for children."
+      },
+      {
+        "picture": "/images/toys/plush_bunny.png",
+        "name": "Bunny",
+        "price": 26.99,
+        "rating": 4.7,
+        "availableQuantity": 45,
+        "description": "This plush bunny is soft and fluffy, with long ears and a friendly face. A perfect gift for Easter or any occasion."
+      }
+    ]
+  },
+  {
+    "id": "02",
+    "categoryName": "Farm Animal Toys",
+    "toys": [
+      {
+        "picture": "/images/toys/farm_horse.png",
+        "name": "Horse",
+        "price": 34.99,
+        "rating": 4.5,
+        "availableQuantity": 30,
+        "description": "A beautifully crafted horse toy with realistic details. Perfect for imaginative farm play and learning about animals."
+      },
+      {
+        "picture": "/images/toys/farm_cow.png",
+        "name": "Cow",
+        "price": 32.99,
+        "rating": 4.4,
+        "availableQuantity": 25,
+        "description": "This sturdy cow toy is a great addition to any farm set. With lifelike spots and a gentle expression, it's perfect for kids' farm adventures."
+      },
+      {
+        "picture": "/images/toys/farm_pig.png",
+        "name": "Pig",
+        "price": 28.99,
+        "rating": 4.3,
+        "availableQuantity": 35,
+        "description": "A cute and chubby pig toy, great for teaching children about farm life. Its durable build ensures long-lasting play."
+      },
+      {
+        "picture": "/images/toys/farm_chicken.png",
+        "name": "Chicken",
+        "price": 25.99,
+        "rating": 4.6,
+        "availableQuantity": 50,
+        "description": "A delightful chicken toy that adds realism to farm scenes. Its bright colors and playful design make it a favorite for kids."
+      },
+      {
+        "picture": "/images/toys/farm_sheep.png",
+        "name": "Sheep",
+        "price": 30.99,
+        "rating": 4.8,
+        "availableQuantity": 20,
+        "description": "A fluffy sheep toy with a friendly face and soft fleece. Great for pretend farm life and educational play."
+      }
+    ]
+  },
+  {
+    "id": "03",
+    "categoryName": "Wild Animal Toys",
+    "toys": [
+      {
+        "picture": "/images/dino.jpg",
+        "name": "Dinosaur",
+        "price": 39.99,
+        "rating": 4.9,
+        "availableQuantity": 20,
+        "description": "A realistic dinosaur toy that brings prehistoric creatures to life. Perfect for dinosaur enthusiasts and adventurous play."
+      },
+      {
+        "picture": "/images/toys/wild_lion.png",
+        "name": "Lion",
+        "price": 36.99,
+        "rating": 4.6,
+        "availableQuantity": 30,
+        "description": "A majestic lion toy with lifelike mane and details. Great for exploring the animal kingdom and inspiring wild play."
+      },
+      {
+        "picture": "/images/toys/wild_elephant.png",
+        "name": "Elephant",
+        "price": 38.99,
+        "rating": 4.8,
+        "availableQuantity": 25,
+        "description": "This large elephant toy is perfect for jungle and safari adventures. Its realistic size and details make it a favorite for kids."
+      },
+      {
+        "picture": "/images/toys/wild_giraffe.png",
+        "name": "Giraffe",
+        "price": 33.99,
+        "rating": 4.7,
+        "availableQuantity": 40,
+        "description": "A tall giraffe toy with a long neck and detailed spots. Great for educational play and learning about wild animals."
+      },
+      {
+        "picture": "/images/toys/wild_tiger.png",
+        "name": "Tiger",
+        "price": 40.99,
+        "rating": 4.9,
+        "availableQuantity": 22,
+        "description": "A ferocious tiger toy with sharp stripes and a fierce expression. Ideal for thrilling jungle play and learning about predators."
+      }
+    ]
+  },
+  {
+    "id": "04",
+    "categoryName": "Sea Animal Toys",
+    "toys": [
+      {
+        "picture": "/images/toys/sea_shark.png",
+        "name": "Shark",
+        "price": 31.99,
+        "rating": 4.8,
+        "availableQuantity": 45,
+        "description": "A fearsome shark toy with sharp teeth and realistic fins. Perfect for underwater adventures and shark fans."
+      },
+      {
+        "picture": "/images/toys/sea_octopus.png",
+        "name": "Octopus",
+        "price": 29.99,
+        "rating": 4.7,
+        "availableQuantity": 35,
+        "description": "This flexible octopus toy features eight bendable arms and lifelike details, bringing the ocean to life in imaginative play."
+      },
+      {
+        "picture": "/images/toys/sea_whale.png",
+        "name": "Whale",
+        "price": 35.99,
+        "rating": 4.6,
+        "availableQuantity": 25,
+        "description": "A majestic whale toy with realistic size and detailing. Perfect for ocean-themed play and learning about marine life."
+      },
+      {
+        "picture": "/images/toys/sea_dolphin.png",
+        "name": "Dolphin",
+        "price": 28.99,
+        "rating": 4.5,
+        "availableQuantity": 30,
+        "description": "A friendly dolphin toy with smooth skin and playful features. Great for fun underwater stories and creative play."
+      },
+      {
+        "picture": "/images/toys/sea_crab.png",
+        "name": "Crab",
+        "price": 26.99,
+        "rating": 4.4,
+        "availableQuantity": 40,
+        "description": "A colorful crab toy with realistic claws and legs. Ideal for beach-themed adventures and educational play about sea creatures."
+      }
+    ]
+  }
+]
