@@ -5,7 +5,7 @@ import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
-  
+
 } from "react-router-dom";
 import Root from './Routes/Root';
 import Login from './Compo/Login/Login';
@@ -18,12 +18,14 @@ import SingleToy from './Compo/SingleToy/SingleToy';
 import MyToys from './Compo/MyToys/MyToys';
 import ToysLoader from './Compo/MyToys/ToysLoader';
 import Update from './Compo/MyToys/Update';
+import './assets/custom.css';
+import PrivateRoute from './Routes/PrivateRoute';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    children: [ 
+    children: [
       {
         path: "/",
         element: <Home></Home>
@@ -31,11 +33,13 @@ const router = createBrowserRouter([
       {
         path: "/all-toys",
         element: <AllToys></AllToys>,
-        loader: ()=>fetch('http://localhost:5000/addtoys')
+        loader: () => fetch('http://localhost:5000/addtoys')
       },
       {
         path: "/addtoys",
-        element: <AddToy></AddToy>
+        element: <PrivateRoute>
+          <AddToy></AddToy>
+        </PrivateRoute>
       },
       {
         path: "/login",
@@ -46,18 +50,20 @@ const router = createBrowserRouter([
         element: <SignUp></SignUp>
       },
       {
-        path:"/singletoy/:toyId",
-        loader:({params})=>fetch(`http://localhost:5000/addtoys/${params.toyId}`),
-        element:<SingleToy></SingleToy>
+        path: "/singletoy/:toyId",
+        loader: ({ params }) => fetch(`http://localhost:5000/addtoys/${params.toyId}`),
+        element: <SingleToy></SingleToy>
       },
       {
-        path:"/mytoys",  
-        element:<ToysLoader></ToysLoader>
+        path: "/mytoys",
+        element: <PrivateRoute>
+          <ToysLoader></ToysLoader>
+        </PrivateRoute>
       },
       {
-        path:"/update/:toyId",
-        loader:({params})=>fetch(`http://localhost:5000/update/${params.toyId}`),
-        element:<Update></Update>
+        path: "/update/:toyId",
+        loader: ({ params }) => fetch(`http://localhost:5000/update/${params.toyId}`),
+        element: <Update></Update>
       }
     ]
   },
@@ -67,7 +73,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AuthProvider>
       <RouterProvider router={router} />
-      </AuthProvider>
-    
+    </AuthProvider>
+
   </StrictMode>,
 )

@@ -1,0 +1,16 @@
+/* Add this to your CSS file */
+.nav-link {
+    font-weight: bold;
+    color: #000;
+    font-size: medium;
+  }
+  
+  .nav-link.active {
+    color: #e066ff; /* Change this color if needed */
+   
+  }
+  
+  .nav-link:hover {
+    color:  #e066ff; /* Gray color for hover */
+  }
+  

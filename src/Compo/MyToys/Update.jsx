@@ -51,111 +51,118 @@ const Update = () => {
     };
 
     return (
-        <div>
-            <div className="max-w-2xl mx-auto mt-10 p-6 bg-purple-100 rounded-lg shadow-lg mb-6">
-                <h2 className="text-2xl font-bold mb-6 text-gray-800 text-center">Update Toy</h2>
-                <form onSubmit={handleupdateToy} className="space-y-4">
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Picture URL</label>
-                        <input
-                            type="text"
-                            name="pictureUrl"
-                            defaultValue={updateToy.pictureUrl}
-                            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
-                            placeholder="Enter the picture URL"
-                        />
+        <div className="max-w-3xl mx-auto mt-10 p-6 bg-purple-100 rounded-lg shadow-lg mb-6">
+            <h2 className="text-2xl font-bold mb-6 text-gray-800 text-center">Update Toy</h2>
+            <form onSubmit={handleupdateToy} className="space-y-4">
+                <div className="flex flex-wrap gap-4">
+                    <div className="flex-1 space-y-4">
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700">Picture URL</label>
+                            <input
+                                type="text"
+                                name="pictureUrl"
+                                defaultValue={updateToy.pictureUrl}
+                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                                placeholder="Enter the picture URL"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700">Name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                defaultValue={updateToy.name}
+                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                                placeholder="Enter toy name"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700">Seller Name</label>
+                            <input
+                                type="text"
+                                name="sellerName"
+                                defaultValue={user?.displayName || updateToy.sellerName}
+                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                                placeholder="Enter seller name"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700">Seller Email</label>
+                            <input
+                                type="email"
+                                name="sellerEmail"
+                                defaultValue={user?.email || updateToy.sellerEmail}
+                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                                placeholder="Enter seller email"
+                            />
+                        </div>
                     </div>
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Name</label>
-                        <input
-                            type="text"
-                            name="name"
-                            defaultValue={updateToy.name}
-                            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
-                            placeholder="Enter toy name"
-                        />
+                    <div className="flex-1 space-y-4">
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700">Sub-category</label>
+                            <input
+                                type="text"
+                                name="subCategory"
+                                defaultValue={updateToy.subCategory}
+                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                                placeholder="Enter toy sub-category"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700">Price</label>
+                            <input
+                                type="number"
+                                name="price"
+                                defaultValue={updateToy.price}
+                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                                placeholder="Enter price"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700">Rating</label>
+                            <input
+                                type="number"
+                                name="rating"
+                                defaultValue={updateToy.rating}
+                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                                placeholder="Enter rating (0-5)"
+                                min="0"
+                                max="5"
+                                step="0.1"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700">Available Quantity</label>
+                            <input
+                                type="number"
+                                name="quantity"
+                                defaultValue={updateToy.quantity}
+                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                                placeholder="Enter available quantity"
+                            />
+                        </div>
                     </div>
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Seller Name</label>
-                        <input
-                            type="text"
-                            name="sellerName"
-                            defaultValue={user?.displayName || updateToy.sellerName}
-                            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
-                            placeholder="Enter seller name"
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Seller Email</label>
-                        <input
-                            type="email"
-                            name="sellerEmail"
-                            defaultValue={user?.email || updateToy.sellerEmail}
-                            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
-                            placeholder="Enter seller email"
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Sub-category</label>
-                        <input
-                            type="text"
-                            name="subCategory"
-                            defaultValue={updateToy.subCategory}
-                            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
-                            placeholder="Enter toy sub-category"
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Price</label>
-                        <input
-                            type="number"
-                            name="price"
-                            defaultValue={updateToy.price}
-                            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
-                            placeholder="Enter price"
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Rating</label>
-                        <input
-                            type="number"
-                            name="rating"
-                            defaultValue={updateToy.rating}
-                            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
-                            placeholder="Enter rating (0-5)"
-                            min="0"
-                            max="5"
-                            step="0.1"
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Available Quantity</label>
-                        <input
-                            type="number"
-                            name="quantity"
-                            defaultValue={updateToy.quantity}
-                            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
-                            placeholder="Enter available quantity"
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Detail Description</label>
-                        <textarea
-                            name="description"
-                            defaultValue={updateToy.description}
-                            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
-                            placeholder="Enter a detailed description of the toy"
-                            rows="4"
-                        ></textarea>
-                    </div>
-                    <button
-                        type="submit"
-                        className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition duration-200"
-                    >
-                        Update Toy
-                    </button>
-                </form>
-            </div>
+                </div>
+                <div>
+                    <label className="block text-sm font-medium text-gray-700">Detail Description</label>
+                    <textarea
+                        name="description"
+                        defaultValue={updateToy.description}
+                        className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                        placeholder="Enter a detailed description of the toy"
+                        rows="4"
+                    ></textarea>
+                </div>
+                <div className='flex justify-center'>
+                <button
+                    type="submit"
+                    className="bg-purple-500 text-white px-6 py-2 rounded-lg hover:bg-purple-600 transition duration-200"
+                >
+                    Update Toy
+                </button>
+                </div>
+               
+            </form>
         </div>
     );
 };

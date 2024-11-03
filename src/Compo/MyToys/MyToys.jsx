@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 
 const MyToys = ({ myToy }) => {
 
-    const { _id, pictureUrl, price, quantity } = myToy;
+    const { _id,name, pictureUrl, price, quantity } = myToy;
 
     const handleDelete = _id => {
 
@@ -46,13 +46,13 @@ const MyToys = ({ myToy }) => {
 
 
     return (
-        <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md mb-6">
+        <div className="max-w-2xl mx-auto p-6 bg-gray-100 hover:bg-gray-200 rounded-lg shadow-md mb-6">
 
             <div className="flex items-center justify-between p-4 border-b border-gray-300">
                 <div className="flex items-center">
                     <img src={pictureUrl} alt="" className="w-16 h-16 object-cover rounded" />
                     <div className="ml-4">
-                        <h3 className="text-lg font-semibold">{ }</h3>
+                        <h3 className="text-lg font-semibold">{name }</h3>
                         <p className="text-gray-600">Price: ${price}</p>
                         <p className="text-gray-600">Quantity: {quantity}</p>
                     </div>

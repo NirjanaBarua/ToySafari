@@ -63,8 +63,8 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <div className="w-full max-w-xl p-6 bg-gray rounded-lg mt-8 mb-8">
+    <div className="flex justify-center items-center min-h-screen">
+      <div className="w-full max-w-xl p-6 bg-gray-100 rounded-lg mt-8 mb-8">
         <h2 className="text-3xl font-bold text-center mb-2">Welcome to ToySafari</h2>
 
         {/* Panda image */}

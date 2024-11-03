@@ -1,11 +1,14 @@
 import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const LoginPage = () => {
     const navigate = useNavigate();
+    const location = useLocation();
     const { loginUser, signInWithGoogle } = useContext(AuthContext)
+
+    const redirectPath = location.state?.from || "/";
 // sign in with email pass
     const handleContinuebtn = event => {
         event.preventDefault();
@@ -18,7 +21,7 @@ const LoginPage = () => {
         loginUser(email, password)
             .then(result => {
                 console.log(result.user);
-                navigate("/");
+                navigate(redirectPath, { replace: true });
             })
             .catch(error => {
                 console.log(error);
@@ -30,7 +33,7 @@ const LoginPage = () => {
         signInWithGoogle()
             .then(result => {
                 console.log(result.user);
-                navigate("/");
+                navigate(redirectPath, { replace: true });
             })
             .catch(error => {
                 console.log(error);
@@ -41,8 +44,8 @@ const LoginPage = () => {
         navigate('/signup');
     }
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gray-100">
-            <div className="w-full max-w-md p-6 bg-gray rounded-lg ">
+        <div className="flex justify-center items-center min-h-screen ">
+            <div className="w-full max-w-xl p-6 bg-gray-100 rounded-lg ">
                 <h2 className="text-3xl font-bold text-center mb-2">ToySafari</h2>
 
 

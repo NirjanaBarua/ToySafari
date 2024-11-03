@@ -20,7 +20,7 @@ const ToysLoader = () => {
     }, [user, loading]);
 
     return (
-        <div>
+        <div className="mt-6">
             {myToys.length === 0 && <p className="font-bold text-center">No toys found for this user.</p>}
             {
                 myToys.map(myToy => (

@@ -47,7 +47,7 @@ const AddToy = () => {
     return (
         <div>
             <div className="max-w-2xl mx-auto mt-10 p-6 bg-purple-100 rounded-lg shadow-lg mb-6">
-                <h2 className="text-2xl font-bold mb-6 text-gray-800">Add A Toy</h2>
+                <h2 className="text-2xl font-bold mb-6 text-gray-800 text-center">Add A Toy</h2>
                 <form onSubmit={handleAddToy} className="space-y-4">
                     <div>
                         <label className="block text-sm font-medium text-gray-700">Picture URL</label>
@@ -142,12 +142,16 @@ const AddToy = () => {
                             rows="4"
                         ></textarea>
                     </div>
+                    <div  className="flex justify-center">
                     <button
                         type="submit"
-                        className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition duration-200"
+                        className="flex justify-center bg-purple-500 text-white px-6 py-2 rounded-lg hover:bg-purple-600 transition duration-200"
                     >
                         Add Toy
                     </button>
+                    </div>
+                    
+                    
                 </form>
             </div>
         </div>
