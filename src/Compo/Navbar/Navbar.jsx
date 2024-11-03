@@ -1,10 +1,17 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const Navbar = () => {
+    const {user,logOut}=useContext(AuthContext);
+
+    const handlelogOut=()=>{
+        logOut();
+    }
     return (
         <div>
-            
+
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -41,7 +48,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <NavLink
-                                    to="/my-toys"
+                                    to="/mytoys"
                                     className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
                                     My Toys
                                 </NavLink>
@@ -75,7 +82,7 @@ const Navbar = () => {
                         </li>
                         <li>
                             <NavLink
-                                to="/my-toys"
+                                to="/mytoys"
                                 className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
                                 My Toys
                             </NavLink>
@@ -89,18 +96,31 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <div className="space-x-2">
+                <div className="navbar-end hidden lg:flex">
+                    <div>
+                        { 
+                            user ? (
+                                <>
+                                <span>{user.displayName || user.email}</span>
+                                <div onClick={handlelogOut} className="btn">Logout</div>
 
-                        <NavLink to="/login" className="btn">
-                            Login
-                        </NavLink>
-                        <NavLink to="/signup" className="btn">
-                            SignUp
-                        </NavLink>
+                                </>
+                            ) : (
+                                <div className="space-x-2">
+
+                                    <NavLink to="/login" className="btn">
+                                        Login
+                                    </NavLink>
+                                    <NavLink to="/signup" className="btn">
+                                        SignUp
+                                    </NavLink>
+                                </div>
+                            )
+                        }
                     </div>
+
                 </div>
-                
+
             </div>
         </div>
     );
