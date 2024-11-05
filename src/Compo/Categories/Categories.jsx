@@ -2,6 +2,7 @@ import 'react-tabs/style/react-tabs.css';
 import { useEffect, useState } from 'react';
 import SubCategory from '../SubCategory/SubCategory';
 import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
+import { Slide } from 'react-awesome-reveal';
 
 const Categories = () => {
     const [subtoys, setSubToys] = useState([]);
@@ -15,7 +16,9 @@ const Categories = () => {
 
     return (
         <div>
-            <h1 className='text-3xl font-bold text-center mb-6'>Shop by Category</h1>
+            <Slide direction='up'>
+            <h1 className='anton-sc-regular text-3xl font-bold text-center mb-6'>Shop by Category</h1>
+            </Slide>
             <Tabs className="lg:px-32 sm:w-full">
                
                 <TabList>

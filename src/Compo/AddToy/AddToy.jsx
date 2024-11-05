@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { Slide } from "react-awesome-reveal";
 
 
 const AddToy = () => {
@@ -45,9 +46,10 @@ const AddToy = () => {
             )
     }
     return (
-        <div>
+        <div >
+            <hr className="hr-gradient"/>
             <div className="max-w-2xl mx-auto mt-10 p-6 bg-purple-100 rounded-lg shadow-lg mb-6">
-                <h2 className="text-2xl font-bold mb-6 text-gray-800 text-center">Add A Toy</h2>
+            <Slide direction="down"><h2 className="text-center anton-sc-regular">Add A Toy</h2></Slide>
                 <form onSubmit={handleAddToy} className="space-y-4">
                     <div>
                         <label className="block text-sm font-medium text-gray-700">Picture URL</label>

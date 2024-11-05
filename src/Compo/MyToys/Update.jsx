@@ -2,6 +2,8 @@ import { useContext } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
 import Swal from 'sweetalert2';
 import { useLoaderData } from 'react-router-dom';
+import { DiVim } from 'react-icons/di';
+import { Slide } from 'react-awesome-reveal';
 
 const Update = () => {
     const { user } = useContext(AuthContext);
@@ -51,8 +53,12 @@ const Update = () => {
     };
 
     return (
+        <div>
+             <hr className='hr-gradient'/>
+        
         <div className="max-w-3xl mx-auto mt-10 p-6 bg-purple-100 rounded-lg shadow-lg mb-6">
-            <h2 className="text-2xl font-bold mb-6 text-gray-800 text-center">Update Toy</h2>
+           
+            <Slide direction='down'><h2 className="anton-sc-regular text-center">Update Toy</h2></Slide>
             <form onSubmit={handleupdateToy} className="space-y-4">
                 <div className="flex flex-wrap gap-4">
                     <div className="flex-1 space-y-4">
@@ -163,6 +169,7 @@ const Update = () => {
                 </div>
                
             </form>
+        </div>
         </div>
     );
 };

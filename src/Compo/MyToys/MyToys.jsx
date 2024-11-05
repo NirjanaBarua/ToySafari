@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const MyToys = ({ myToy }) => {
+const MyToys = ({ myToy,onDelete }) => {
 
     const { _id,name, pictureUrl, price, quantity } = myToy;
 
@@ -27,13 +27,13 @@ const MyToys = ({ myToy }) => {
                     .then(data => {
                         console.log(data);
 
-                        if (data.deleteCount > 0) {
                             Swal.fire({
                                 title: "Deleted!",
                                 text: "Your file has been deleted.",
                                 icon: "success"
                             });
-                        }
+                            onDelete(_id);
+                        
                     }
                     )
 
@@ -46,8 +46,9 @@ const MyToys = ({ myToy }) => {
 
 
     return (
+        
         <div className="max-w-2xl mx-auto p-6 bg-gray-100 hover:bg-gray-200 rounded-lg shadow-md mb-6">
-
+            
             <div className="flex items-center justify-between p-4 border-b border-gray-300">
                 <div className="flex items-center">
                     <img src={pictureUrl} alt="" className="w-16 h-16 object-cover rounded" />
@@ -68,8 +69,9 @@ const MyToys = ({ myToy }) => {
                     </button>
                 </div>
             </div>
-
+           
         </div>
+        
     );
 };
 

@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import ToysTable from "../ToysTable/ToysTable";
 import { useState } from "react";
+import { Slide } from "react-awesome-reveal";
 
 const AllToys = () => {
     const toys = useLoaderData();
@@ -19,8 +20,8 @@ const AllToys = () => {
     };
     return (
         <div>
-
-            <h1 className="font-bold text-center px-4 py-2 min-w-full table-auto border-collapse border border-gray-300 bg-green-400">All Toys</h1>
+            <hr className="hr-gradient" />
+            <Slide direction="up"><h1 className="anton-sc-regular font-bold text-center text-purple-500">All Toys</h1></Slide>
             <div className="mt-6 flex justify-center">
                 <input type="text"
                     placeholder="Search by Toy Name"
@@ -32,7 +33,7 @@ const AllToys = () => {
                     }} />
                 <button onClick={() => {
                     console.log("Search clicked with query:", searchQuery);
-                }} type="submit" className="p-2.5 ms-2 text-sm font-medium text-white bg-green-500 rounded-lg border border-green-700 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-200 dark:bg-green-400 dark:hover:bg-green-500 dark:focus:ring-green-500">
+                }} type="submit" className="p-2.5 ms-2 text-sm font-medium text-white bg-purple-500 rounded-lg border border-purple-700 hover:bg-purple-600 focus:ring-4 focus:outline-none focus:ring-purple-200 dark:bg-purple-400 dark:hover:bg-purple-500 dark:focus:ring-purple-500">
                     <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                     </svg>
@@ -41,7 +42,7 @@ const AllToys = () => {
             </div>
 
 
-            <div className="container  mt-10 px-2">
+            <div className="container  mt-10 px-4">
                 <div className="overflow-x-auto">
                     <table className="min-w-full table-auto border-collapse border border-gray-300">
                         <thead>
@@ -72,7 +73,7 @@ const AllToys = () => {
                 {[...Array(totalPages)].map((_, i) => (
                     <button
                         key={i}
-                        className={`join-item btn btn-square ${currentPage === i + 1 ? "bg-green-500 text-white" : ""}`}
+                        className={`join-item btn btn-square ${currentPage === i + 1 ? "bg-purple-500 text-white" : ""}`}
                         onClick={() => handlePageChange(i + 1)}
                     >
                         {i + 1}

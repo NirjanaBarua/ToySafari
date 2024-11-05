@@ -30,7 +30,7 @@ const ToysTable = ({ toy, serial }) => {
             <td className="px-4 py-2 border border-gray-300">${price}</td>
             <td className="px-4 py-2 border border-gray-300">{quantity}</td>
             <td className="px-4 py-2 border border-gray-300">
-                <button onClick={handleViewDetails} className="bg-green-400 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-200">
+                <button onClick={handleViewDetails} className="bg-purple-400 text-white px-4 py-2 rounded-lg hover:bg-purple-600 transition duration-200">
                     View Details
                 </button>
             </td>

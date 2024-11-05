@@ -7,7 +7,10 @@ const SingleToy = () => {
     console.log(toy)
 
     return (
-        <div className="p-8 max-w-xl mx-auto bg-gray-100 rounded-lg shadow-md m-4">
+        <div>
+            <hr className="hr-gradient" />
+        
+        <div className="p-8 max-w-xl mx-auto bg-gray-100 hover:bg-gray-200 rounded-lg shadow-md m-4">
             <div className="flex justify-center">
             <img src={pictureUrl} alt={name} className="w-72 h-72 object-cover rounded-md mb-4 " />
             </div>
@@ -18,6 +21,7 @@ const SingleToy = () => {
             <p className="text-lg text-yellow-500">Rating: {rating}</p>
             <p className="text-lg text-gray-900 mb-2">Available Quantity: {quantity}</p>
             <p className="text-gray-700">{description}</p>
+        </div>
         </div>
     );
 };

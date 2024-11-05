@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&display=swap');
 /* Add this to your CSS file */
 .nav-link {
     font-weight: bold;
@@ -13,4 +14,18 @@
   .nav-link:hover {
     color:  #e066ff; /* Gray color for hover */
   }
+
+  .anton-sc-regular {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+  }
+  .hr-gradient {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #a855f7, #f472b6);
+}
+
+  
   

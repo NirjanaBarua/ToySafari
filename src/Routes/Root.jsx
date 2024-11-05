@@ -2,12 +2,13 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../Compo/Navbar/Navbar";
 import Footer from "../Compo/Footer/Footer";
 
-
 const Root = () => {
     return (
-        <div>
+        <div className="flex flex-col min-h-screen">
             <Navbar></Navbar>
-            <Outlet></Outlet>
+            <main className="flex-grow">
+                <Outlet></Outlet>
+            </main>
             <Footer></Footer>
         </div>
     );

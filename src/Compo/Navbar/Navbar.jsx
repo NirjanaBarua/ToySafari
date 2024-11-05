@@ -13,7 +13,7 @@ const Navbar = () => {
     }
     return (
         <div>
-            <div className="navbar px-20">
+            <div className="navbar px-20 ">
                 {/* Navbar Start */}
                 <div className="navbar-start  ">
                     <div className="dropdown">
