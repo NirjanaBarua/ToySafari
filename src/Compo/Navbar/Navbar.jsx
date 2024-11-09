@@ -127,7 +127,7 @@ const Navbar = () => {
                         {
                             user ? (
                                 <div className="space-x-2">
-                                    <span className="font-bold">{user.displayName || user.email}</span>
+                                    <span className="font-bold">{user.displayName}</span>
                                     <div onClick={handlelogOut} className="btn bg-purple-400 hover:bg-purple-500 text-white">Logout</div>
                                 </div>
                             ) : (
