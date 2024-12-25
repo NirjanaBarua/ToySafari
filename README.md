@@ -1,6 +1,6 @@
 # ToySafari
 
-Welcome to **ToySafari**, a delightful platform to explore and manage kids' toys. The website offers several exciting features like viewing toys by category, adding and managing toys, and exploring toy details, all with a focus on user interaction and security.
+Welcome to **ToySafari**, a delightful platform to explore and manage kids' toys. The website offers several exciting features like viewing toys by category, adding and managing toys, exploring toy details, all with a focus on user interaction and security and much more.
 
 ## Features 
 
@@ -23,5 +23,14 @@ A private route where users can view all the toys they have added in a table.
 Users can update any toys details.
 
 ### 7.User Authentication
-- 1.Firebase Authentication for login/logout.
-- 2.Restricts access for unauthenticated users.
+- Firebase Authentication for login/logout.
+- Restricts access for unauthenticated users.
+
+## Technologies Used
+- **Frontend**: React, Tailwind CSS  
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **User Authentication**: Firebase
+
+## Demo
+Check out the demo video here.
