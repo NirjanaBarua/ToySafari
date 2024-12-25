@@ -18,6 +18,10 @@ A private route where logged-in users can add new toys by filling out a form.
 
 ### 5. My Toys Page  
 A private route where users can view all the toys they have added in a table.
+
 ### 6. Update Toy Page
 Users can update any toys details.
+
 ### 7.User Authentication
+1.Firebase Authentication for login/logout.
+2.Restricts access for unauthenticated users.
