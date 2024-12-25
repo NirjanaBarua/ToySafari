@@ -23,5 +23,5 @@ A private route where users can view all the toys they have added in a table.
 Users can update any toys details.
 
 ### 7.User Authentication
-1.Firebase Authentication for login/logout.
-2.Restricts access for unauthenticated users.
+- 1.Firebase Authentication for login/logout.
+- 2.Restricts access for unauthenticated users.
