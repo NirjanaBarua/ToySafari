@@ -12,6 +12,7 @@ const AllToys = () => {
     const filteredData = toys.filter(toy =>
         toy.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
+    
     const totalPages = Math.ceil(filteredData.length / itemsPerPage);
     const currentItems = filteredData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 

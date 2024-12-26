@@ -15,7 +15,7 @@ import AllToys from './Compo/AllToys/AllToys';
 import AddToy from './Compo/AddToy/AddToy';
 import AuthProvider from './Provider/AuthProvider';
 import SingleToy from './Compo/SingleToy/SingleToy';
-import MyToys from './Compo/MyToys/MyToys';
+
 import ToysLoader from './Compo/MyToys/ToysLoader';
 import Update from './Compo/MyToys/Update';
 import './assets/custom.css';
