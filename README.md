@@ -35,3 +35,14 @@ Users can update any toys details.
 ## Demo
 Check out the demo video here.
 - You Tube: https://youtu.be/jUxRFOO0ewo
+
+## Screenshots
+Check out some screenshots of my project.
+
+<img width="1896" height="867" alt="Screenshot 2025-07-20 125631" src="https://github.com/user-attachments/assets/56832068-8222-470f-b4fb-486dedb0033f" />
+
+<img width="1827" height="866" alt="Screenshot 2025-07-20 125712" src="https://github.com/user-attachments/assets/ac9cc200-44a2-4230-a51d-54d2b9bafe45" />
+
+<img width="1883" height="955" alt="Screenshot 2025-07-20 125930" src="https://github.com/user-attachments/assets/cca9c824-e845-47b5-ace4-c6434c1a000a" />
+
+<img width="1875" height="920" alt="Screenshot 2025-07-20 130152" src="https://github.com/user-attachments/assets/f53a469e-c9fe-4ad9-8164-a9cc8e33f7cc" />
